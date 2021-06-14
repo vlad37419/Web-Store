@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+     
+    $(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+    $('.scrollup').fadeIn();
+    } else {
+    $('.scrollup').fadeOut();
+    }
+    });
+     
+    $('.scrollup').click(function(){
+    $("html, body").animate({ scrollTop: 0 }, 600);
+    return false;
+    });
+     
+    });
+    </script>
+  <title>Web Store</title>
+</head>
+<body>
+  <header class="header">
+    <picture>
+      <source srcset="img/BG.png" media="(max-width: 820px)">
+      <img class="header__background" src="img/header-background.jpg" alt="">
+    </picture>
+    <div class="container">
+      <div class="header__container">
+        <div class="header__top">
+          <div class="header__logo logo">
+            <div class="logo__image">
+              <a href="#"><img src="img/logo.png" alt=""></a>
+            </div>
+            <div class="logo__content">
+              <div class="logo__title">
+                <a href="#">WEB STORE</a>
+              </div>
+              <div class="logo__text">
+                <a href="#">Создание адаптивных сайтов с индивидуальным дизайном</a>
+              </div>
+            </div>
+          </div>
+          <div class="header__menu menu">
+            <div class="menu__icon">
+              <span></span>
+            </div>
+            <nav class="menu__body">
+              <ul class="menu__list">
+                <li class="menu__link"><a class="active" href="#">Главная</a></li>
+                <li class="menu__link"><a href="Страница портфолио/index.html">Наши работы</a></li>
+                <li class="menu__link"><a href="Страница контактов/index.html">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__social social">
+            <div class="social__vk">
+              <a href="#"><img src="img/vk.svg" alt=""></a>
+            </div>
+            <div class="social__inst">
+              <a href="#"><img src="img/inst.svg" alt=""></a>
+            </div>
+            <div class="social__youtube">
+              <a href="#"><img src="img/youtube.svg" alt=""></a>
+            </div>
+          </div>
+          <div class="header__time time">
+            <div class="time__image">
+              <img src="img/time.svg" alt="">
+            </div>
+            <div class="time__content">
+              <div class="time__title">
+                Часы работы:
+              </div>
+              <div class="time__text">
+                с 9:00 до 22:00
+              </div>
+            </div>
+          </div>
+          <div class="header__connection connection">
+            <div class="connection-wrapper__content">
+              <div class="connection__content">
+                <div class="connection__image">
+                  <a href="#"><img src="img/tel.svg" alt=""></a>
+                </div>
+                <div class="connection__tel">
+                  <a href="#">+7 (952)-413-95-28</a>
+                </div>
+              </div>
+            </div>
+            <div class="connection__button">
+              <a href="#">Заказать звонок</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="body-header__container">
+      <div class="body-header__title">
+        Успей заказать адаптивный сайт с индивидуальным дизайном!
+      </div>
+      <div class="body-header__text">
+        Сделай правильный выбор - закажи сайт и стань на голову выше 
+        своих конкурентов
+      </div>
+      <div class="body-header__buttons">
+        <div class="body-header__button">
+          <a href="#">Сделать заказ </a>
+        </div>
+        <div class="body-header__link link-portfolio">
+          <div class="link-portfolio__image">
+            <a href="#"><img src="img/arrow.svg" alt=""></a>
+          </div>
+          <div class="link-portfolio__text">
+            Смотреть наши работы
+          </div>
+        </div>
+    </div>
+    </div>
+  </header>
+  <div class="content">
+    <div class="advantages">
+      <div class="container">
+        <div class="advantages__container">
+          <div class="advantages__title">
+            Почему именно мы?
+          </div>
+          <div class="advantages__row">
+            <div class="advantages__column column">
+              <div class="column__item">
+                <div class="column__image">
+                  <img src="img/1.png" alt="">
+                </div>
+                <div class="column__title">
+                  Индивидуальный подход к каждому клиенту
+                </div>
+                <div class="column__text">
+                  Мы найдем подход к каждому клиенту, чтобы воплотить в реальность любую идею
+                </div>
+              </div>
+            </div>
+            <div class="advantages__column column">
+              <div class="column__item">
+                <div class="column__image">
+                  <img src="img/2.png" alt="">
+                </div>
+                <div class="column__title column__title_1">
+                  Нестандартное мышление
+                </div>
+                <div class="column__text">
+                  Мы сможем сделать сайт, который не будет похож на тысячи сайтов такого же типа
+                </div>
+              </div>
+            </div>
+            <div class="advantages__column column">
+              <div class="column__item">
+                <div class="column__image">
+                  <img src="img/3.png" alt="">
+                </div>
+                <div class="column__title column__title_2">
+                  Поэтапная оплата
+                </div>
+                <div class="column__text">
+                  Мы не требуем 100% предоплаты за проект. Для старта работ вам достаточно внести 30%
+                </div>
+              </div>
+            </div>
+            <div class="advantages__column column">
+              <div class="column__item">
+                <div class="column__image">
+                  <img src="img/4.png" alt="">
+                </div>
+                <div class="column__title column__title_3">
+                  Поддержка на всех этапах разработки
+                </div>
+                <div class="column__text">
+                  Консультация на каждом этапе разработки. Поможем сделать граммотно, а главное - удобно
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="work">
+      <div class="container">
+        <div class="work__container">
+          <div class="work__title">
+            Наши работы - наша гордость
+          </div>
+          <div class="work__row">
+            <div class="work__column column-work">
+              <div class="column-work__item">
+                <div class="column-work__image">
+                  <img src="img/01.jpg" alt="">
+                </div>
+                <div class="column-work__button">
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="work__column column-work">
+              <div class="column-work__item">
+                <div class="column-work__image">
+                  <img src="img/02.jpg" alt="">
+                </div>
+                <div class="column-work__button column-work__button_black">
+                  <a class="black" href="#">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="work__column column-work">
+              <div class="column-work__item">
+                <div class="column-work__image">
+                  <img src="img/03.jpg" alt="">
+                </div>
+                <div class="column-work__button">
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="work__column column-work">
+              <div class="column-work__item">
+                <div class="column-work__image">
+                  <img src="img/04.jpg" alt="">
+                </div>
+                <div class="column-work__button column-work__button_black">
+                  <a class="black" href="#">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="work__more more">
+            <div class="more__container">
+              <div class="more__image">
+                <a href="#"><svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L8.22183 7.77046C8.64324 8.16554 8.64324 8.83446 8.22183 9.22954L0.999999 16" stroke-width="2"/>
+                  </svg>
+                  </a>
+              </div>
+              <div class="more__text">
+                Смотреть еще
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <form method="post" action="#" class="form">
+      <img src="img/header-background.jpg" alt="">
+      <div class="container">
+        <div class="form__container">
+          <div class="form__title">
+            Заполни форму, чтобы сделать заказ
+          </div>
+          <div class="form__wrapper">
+            <div class="form__name form__input">
+              <input placeholder="Имя" type="text">
+            </div>
+            <div class="form__email form__input">
+              <input placeholder="E-mail" type="email">
+            </div>
+            <div class="form__email form__input">
+              <input placeholder="Телефон" type="tel">
+            </div>
+            <div class="form__button">
+              <button type="submit">Сделать казаз</button>
+            </div>
+          </div>
+          <div class="form__text">
+            *Делая заказ, Вы автоматически соглашаетесь с нашей “Политикой конфиденциальности”
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <footer class="footer">
+    <img class="footer__background" src="img/footer.jpg" alt="">
+    <div class="footer__container">
+      <div class="footer__logo logo-footer">
+        <div class="logo__image">
+          <a href="#"><img src="img/logo.png" alt=""></a>
+        </div>
+        <div class="logo__content">
+          <div class="logo__title">
+            <a href="#">WEB STORE</a>
+          </div>
+          <div class="logo__text">
+            <a href="#">Создание адаптивных сайтов с индивидуальным дизайном</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__menu menu-footer">
+        <ul class="menu-footer__list">
+          <li class="menu__link"><a class="active" href="#">Главная</a></li>
+          <li class="menu__link"><a href="Страница портфолио/index.html">Наши работы</a></li>
+          <li class="menu__link"><a href="Страница контактов/index.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer__social social-footer">
+        <div class="social__vk">
+          <a href="#"><img src="img/vk.svg" alt=""></a>
+        </div>
+        <div class="social__inst">
+          <a href="#"><img src="img/inst.svg" alt=""></a>
+        </div>
+        <div class="social__youtube">
+          <a href="#"><img src="img/youtube.svg" alt=""></a>
+        </div>
+      </div>
+      <div class="connection__content">
+        <div class="connection__image">
+          <a href="#"><img src="img/tel.svg" alt=""></a>
+        </div>
+        <div class="connection__tel">
+          <a href="#">+7 (952)-413-95-28</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <a href="#" class="scrollup"></a>
+  <script src="js/script.js"></script>
+</body>
+</html>
